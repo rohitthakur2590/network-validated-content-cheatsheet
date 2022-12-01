@@ -34,7 +34,7 @@ include_role:
 
 *Examples:*
 
-*Get list of supported resource modules for ios operating system*
+*Get list of supported resource modules for junos operating system*
 
 The task would look like following:
 ----
@@ -46,18 +46,47 @@ The task would look like following:
       name: resource_manager
     vars:
       action: list
-----
+
+
+TASK [../../base/roles/resource_manager : Available Network resources] *************************************************
+ok: [35.155.13.92] => {
+    "msg": {
+        "ansible_connection": "ansible.netcommon.network_cli",
+        "ansible_network_os": "cisco.ios.ios",
+        "changed": false,
+        "failed": false,
+        "modules": [
+            "acl_interfaces",
+            "acls",
+            "bgp_address_family",
+            "bgp_global",
+            "hostname",
+            "interfaces",
+            "l2_interfaces",
+            "l3_interfaces",
+            "lacp",
+            "lacp_interfaces",
+            "lag_interfaces",
+            "lldp_global",
+            "lldp_interfaces",
+            "logging_global",
+            "ntp_global",
+            "ospf_interfaces",
+            "ospfv2",
+            "ospfv3",
+            "prefix_lists",
+            "route_maps",
+            "snmp_server",
+            "static_routes",
+            "vlans"
+        ]
+    }
+}
+
 
 ----
-$ mongo -u root -p password
 
-MongoDB shell version v4.4.14
-connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
-Implicit session: session { "id" : UUID("2d62ffdb-a70d-40bf-af6e-15de859ecc62") }
-MongoDB server version: 5.0.8
-----
-
-*Access remote instance*
+*Create brownfield inventory*
 
 ----
 $ mongo 192.168.86.93:27017/fruit -u root -p password  --authenticationDatabase "admin"
