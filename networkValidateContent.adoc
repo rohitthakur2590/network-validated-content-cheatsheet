@@ -1,10 +1,10 @@
-= Network Bgp Validated Content Cheat Sheet
+= Network BGP Validated Content Cheat Sheet
 :experimental: true
-:product-name: Network Validated Content Cheat Sheet
+:product-name: Network BGP Validated Content Cheat Sheet
 
-Ansible Network Bgp Validated content comprises YAML content, ansible roles, playbooks, etc, It is focuses on Bgp networking use cases.
+Ansible Network BGP Validated content comprises YAML content, ansible roles, playbooks, etc, It is focuses on BGP networking use cases.
 
-The following section describe the command and tasks that are basic to using Network Bgp Validated Content.
+The following section describe the command and tasks that are basic to using Network BGP Validated Content.
 
 The `list` task provide the list of supported resource modules.
 
